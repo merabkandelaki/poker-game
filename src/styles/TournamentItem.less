@@ -1,0 +1,91 @@
+.tournament-item {
+  position: relative;
+  display: flex;
+  border-radius: 4px;
+  background-color: #373352;
+  overflow: hidden;
+  flex-grow: 1;
+  min-width: 200px;
+  &-inner {
+    padding: 8px;
+    width: 100%;
+  }
+
+  h4 {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.63px;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #fff;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+
+  &-label {
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    &--registering {
+      background-color: #00bb40;
+    }
+    &--cancelled {
+      background-color: #5e5a79;
+    }
+    span {
+      font-family: Montserrat;
+      font-size: 8px;
+      font-weight: 600;
+      line-height: 9.75px;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+
+  &-header {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 9px;
+  }
+  &-tag {
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 9.75px;
+    color: #ffffffa6;
+    padding: 3px;
+    padding-top: 3.5px;
+    border: 1px solid #ffffffa6;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    span {
+      font-family: Montserrat;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 12.19px;
+      text-align: left;
+      color: #ffffffa6;
+    }
+    &-info {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+}
